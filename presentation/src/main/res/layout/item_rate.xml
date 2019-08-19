@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/offset_16">
+
+    <com.tsyapa.presentation.ui.widgets.RoundedImageView
+        android:id="@+id/iv_item_rate_flag"
+        android:layout_width="@dimen/size_icon"
+        android:layout_height="@dimen/size_icon"
+        android:src="@color/colorPrimaryDark"
+        app:borderColor="@color/grey"
+        app:borderSize="@dimen/round_image_view_border_width"
+        app:circular="50"
+        tools:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tv_item_rate_currency"
+        style="@style/Txt.16.Roboto.Primary"
+        android:paddingStart="@dimen/offset_16"
+        android:paddingEnd="@dimen/offset_16"
+        tools:text="USD" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/et_item_rate_amount"
+        style="@style/Txt.20.Roboto.Primary.Bold"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:minEms="2"
+        android:textAlignment="textEnd" />
+</LinearLayout>

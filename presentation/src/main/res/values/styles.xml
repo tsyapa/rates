@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- =========================================================================================================== -->
+    <!-- Text -->
+    <!-- =========================================================================================================== -->
+    <style name="Txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Txt.14">
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="Txt.14.Roboto">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Txt.14.Roboto.Accent">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Txt.16">
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="Txt.16.Roboto">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Txt.16.Roboto.Primary">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Txt.16.Roboto.Primary.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Txt.20">
+        <item name="android:textSize">@dimen/text_20</item>
+    </style>
+
+    <style name="Txt.20.Roboto">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Txt.20.Roboto.Primary">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Txt.20.Roboto.Primary.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Txt.20.Roboto.PrimaryDark">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Txt.20.Roboto.PrimaryDark.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- =========================================================================================================== -->
+    <!-- Toolbar -->
+    <!-- =========================================================================================================== -->
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_toolbar</item>
+        <item name="android:id">@id/toolbar</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- =========================================================================================================== -->
+    <!-- Recycler view -->
+    <!-- =========================================================================================================== -->
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:id">@id/recycler_view</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+</resources>

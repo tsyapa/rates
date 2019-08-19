@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedImageView">
+        <attr name="cornersRadius"/>
+        <attr name="circular"/>
+        <attr name="outlineAlpha"/>
+        <attr name="borderSize"/>
+        <attr name="borderColor"/>
+        <attr name="aspectRatio"/>
+    </declare-styleable>
+</resources>

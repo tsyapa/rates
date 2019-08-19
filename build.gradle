@@ -1,0 +1,88 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // AndroidX
+    androidxCoreVersion = '1.0.2'
+    recyclerView = '1.0.0'
+    lifecycle = '2.0.0'
+    androidxAnnotation = '1.1.0'
+
+    // API
+    retrofit = '2.5.0'
+    gson = '2.8.5'
+    loggingInterceptor = '3.14.1'
+
+    // Rx
+    rxJava = '2.2.8'
+    rxAndroid = '2.1.1'
+
+    // Dagger
+    dagger = '2.22.1'
+    javax = '1'
+
+    // Utils
+    glide = '4.9.0'
+    androidSvg = '1.4'
+
+    // Dependencies
+    androidxDependencies = [
+            appcompat: "androidx.appcompat:appcompat:${androidxCoreVersion}",
+            recyclerView: "androidx.recyclerview:recyclerview:${recyclerView}",
+            lifecycle: "androidx.lifecycle:lifecycle-extensions:${lifecycle}",
+            androidxAnnotation: "androidx.annotation:annotation:${androidxAnnotation}"
+    ]
+
+    apiDependencies = [
+            retrofit: "com.squareup.retrofit2:retrofit:${retrofit}",
+            converterGson: "com.squareup.retrofit2:converter-gson:${retrofit}",
+            adapterRxJava: "com.squareup.retrofit2:adapter-rxjava2:${retrofit}",
+            gson: "com.google.code.gson:gson:${gson}",
+            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${loggingInterceptor}"
+    ]
+
+    rxDependencies = [
+            rxJava: "io.reactivex.rxjava2:rxjava:${rxJava}",
+            rxAndroid: "io.reactivex.rxjava2:rxandroid:${rxAndroid}"
+    ]
+
+    daggerDependencies = [
+            dagger: "com.google.dagger:dagger:${dagger}",
+            daggerAndroidSupport: "com.google.dagger:dagger-android-support:${dagger}",
+            daggerCompiler: "com.google.dagger:dagger-compiler:${dagger}",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:${dagger}",
+            javax: "javax.inject:javax.inject:${javax}"
+    ]
+
+    utilsDependencies = [
+            glide: "com.github.bumptech.glide:glide:${glide}",
+            glideCompiler: "com.github.bumptech.glide:compiler:${glide}",
+            glideAnnotations: "com.github.bumptech.glide:annotations:${glide}",
+            androidSvg: "com.caverock:androidsvg-aar:${androidSvg}"
+    ]
+}

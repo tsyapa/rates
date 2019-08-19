@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.screens.rates.RatesActivity">
+
+    <FrameLayout style="@style/Toolbar">
+
+        <TextView
+            android:id="@+id/temp"
+            style="@style/Txt.20.Roboto.PrimaryDark.Bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/offset_72"
+            android:layout_marginEnd="@dimen/offset_16"
+            android:text="@string/main_rates"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        style="@style/RecyclerView"
+        tools:listitem="@layout/item_rate" />
+</LinearLayout>
